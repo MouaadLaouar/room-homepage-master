@@ -38,6 +38,7 @@ body {
     background-image: url(../../images/desktop-image-hero-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    color: var(--White);
     /* background-image: url(../../images/desktop-image-hero-1.jpg);
     background-repeat: no-repeat; */
 }
@@ -66,24 +67,104 @@ li {
 }
 
 .div02 {
+    position: relative;
     height: 100%;
     width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content01 {
-    position: relative;
     height: 100%;
     width: 100%;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px;
 }
 
-.div02 > .hhhh {
-    background-color: yellow;
-    position: absolute;
+.content01 > h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
+
+.content01 > p {
+    margin-right: 50px;
+    color: var(--Dark-Gray);
+}
+
+.content01 > .shop {
+    margin-top: 20px;
+    display: flex;
+}
+
+.arrow {
+    margin-left: 30px;
+}
+
+.btn {
+    background-color: var(--Black);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 90px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn > svg {
+    cursor: pointer;
+}
+/* .btn > :first-child {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 
 
 
 .section02 {
     height: 35vh;
 }
+
+
+.pic01, .pic02 {
+    height: 100%;
+    width: 30%;
+}
+
+.pic01 {
+    background-image: url(../../images/image-about-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic02 {
+    background-image: url(../../images/image-about-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    height: 100%;
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about > p {
+    margin-top: 20px;
+    color: var(--Dark-Gray);
+    margin-right: 100px;
+}
+
