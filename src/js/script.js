@@ -27,11 +27,29 @@ const theme03 = () => {
 let x = 0;
 
 function right() {
-    console.log('right')
+    x++;
+    if (x == 1) {
+        theme02();
+    }else if (x == 2) {
+        theme03();
+    }else if (x == 3) {
+        x = 0;
+        theme01();
+    }
 }
 
 function left() {
-    console.log('left')
+    x--;
+    if (x == 1) {
+        theme02();
+    }else if (x == 2) {
+        theme03();
+    }else if (x == 0 ) {
+        theme01();
+    }else if (x == -1) {
+        x = 2;
+        theme03();
+    }
 }
 
 btnLeft.addEventListener('click', left)
