@@ -39,8 +39,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--White);
-    /* background-image: url(../../images/desktop-image-hero-1.jpg);
-    background-repeat: no-repeat; */
 }
 
 .menu {
@@ -118,18 +116,6 @@ li {
 .btn > svg {
     cursor: pointer;
 }
-/* .btn > :first-child {
-    background-color: red;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-
 
 .section02 {
     height: 35vh;
@@ -160,6 +146,10 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.about > h1 {
+    font-size: 20px;
 }
 
 .about > p {
